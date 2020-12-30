@@ -21,21 +21,21 @@ var y = 103;
 var foodExist = 0;
 
 function preload() {
-  dogsitImg = loadImage("images/dog.png");
-  doghappyImg = loadImage("images/happydog.png");
-  milkImg = loadImage("images/milk.png");
-  bedroomdogImg = loadImage("images/bedroom.png");
-  deaddogImg = loadImage("images/deaddog.png");
-  foodstockImg = loadImage("images/foodstock.png");
-  gardendogImg = loadImage("images/garden.png");
-  injectiondogImg = loadImage("images/injection.png");
-  lazydogImg = loadImage("images/lazy.png");
-  livingroomImg = loadImage("images/livingroom.png");
-  runningdogImg = loadImage("images/running.png");
-  runningleftdogImg = loadImage("images/runningleft.png");
-  vacationdogImg = loadImage("images/vacationdog.png");
-  vaccinationImg = loadImage("images/vaccination.png");
-  washroomImg = loadImage("images/washroom.png");
+  dogsitImg = loadImage("dog.png");
+  doghappyImg = loadImage("happydog.png");
+  milkImg = loadImage("milk.png");
+  bedroomdogImg = loadImage("bedroom.png");
+  deaddogImg = loadImage("deaddog.png");
+  foodstockImg = loadImage("foodstock.png");
+  gardendogImg = loadImage("garden.png");
+  injectiondogImg = loadImage("injection.png");
+  lazydogImg = loadImage("lazy.png");
+  livingroomImg = loadImage("livingroom.png");
+  runningdogImg = loadImage("running.png");
+  runningleftdogImg = loadImage("runningleft.png");
+  vacationdogImg = loadImage("vacationdog.png");
+  vaccinationImg = loadImage("vaccination.png");
+  washroomImg = loadImage("washroom.png");
 }
 
 function setup() {
@@ -90,9 +90,10 @@ function draw() {
     }
     eventlistener = sec;
     refhome.show();
-    text("Press I to access cheat keys", 10, 550);
+    textSize(12);
+    text("Press I to access keys", 10, 250);
+    
     text("Press R to reload the page", 10, 570);
-    text("Press C to get the source code", 10, 590);
     mainGame();
   }
 }
